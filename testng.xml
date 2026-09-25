@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Ecommerce Automation Suite" verbose="1">
+    <listeners>
+        <listener class-name="com.qa.automation.listeners.TestListener" />
+    </listeners>
+    
+    <test name="API Tests">
+        <classes>
+            <class name="com.qa.automation.tests.api.AuthApiTest"/>
+            <class name="com.qa.automation.tests.api.BookingApiTest"/>
+            <class name="com.qa.automation.tests.api.BookingFlowApiTest"/>
+        </classes>
+    </test>
+    
+    <test name="UI Tests">
+        <classes>
+            <class name="com.qa.automation.tests.ui.LoginTest"/>
+            <class name="com.qa.automation.tests.ui.CartTest"/>
+            <class name="com.qa.automation.tests.ui.CheckoutTest"/>
+        </classes>
+    </test>
+</suite>
